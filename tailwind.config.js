@@ -1,17 +1,39 @@
 module.exports = {
-  purge: [],
 
+  purge: {
+    enabled: true,
+    content: ['./index.html'],
+    layers: ['components', 'utilities'],
+  },
   darkMode: false, // or 'media' or 'class'
   
   theme: {
-    extend: {
+
+    container: {
+      center: true,
+      padding: '1rem',
+    },
+    extend:{
+      maxWidth: {
+        '100': '100px',
+        '120': '120px',
+        '200': '200px',
+        '250': '250px',
+        '350': '350px',
+       },
       
     },
+  
+     
   },
 
   variants: {
-    extend: {},
+    extend: {
+      transform: ['hover'],
+    },
   },
 
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

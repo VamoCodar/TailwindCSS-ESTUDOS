@@ -6,33 +6,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <style>
+        .green-theme {
+            color: #5CA720;
+        }
+    </style>
 </head>
 
 
 
-<body class="bg-gray-50 w-screen h-screen">
-    <div class="container mx-auto  h-screen flex flex-col justify-center items-center">
+<body class="bg-gray-100">
 
-        <ul class="bg-white  h-auto shadow-md  flex flex-col gap-3 rounded-md max-w-xs mx-4">
+    <!-- MENU  ============================================= -->
+    <nav class="bg-white menu">
+        <div class="container">
 
-            <li class="w-full"><img class="object-cover w-full rounded-t-md " src="/assets/img/largato.png" alt="largato"></li>
+            <div class="flex justify-between py-3 items-center">
+                <!-- LOGO -->
+                <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
 
-            <li class="px-3">
-                <h1 class="text-xl font-semibold">Lizard</h1>
-            </li>
+                <!-- LINKS -->
+                <div class="flex gap-4 items-center">
 
-            <li class="px-3">
-                <p class="text-sm text-gray-500">de fácil verificação e apresentar informações úteis. Elementos, como texto e imagens, deve ser
-                    colocado</p>
-            </li>
+                    <a href="#" class="cursor-pointer "> <svg
+                            class="stroke-current green-theme transition duration-300 hover:text-green-900"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5CA720"
+                            width="25px">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="cursor-pointer"> <svg
+                            class="green-theme stroke-current transition duration-300 hover:text-green-900"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5CA720"
+                            width="25px">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg></a>
 
-            <li class="px-3 pb-3 text-blue-500 font-medium "><a class="mr-5 hover:text-blue-800 transition-colors duration-300" href="#">Share</a> <a href="#" class="hover:text-blue-800  transition-colors duration-300">Learn More</a></li>
+                    <a href="#" class="cursor-pointer"> <svg
+                            class="stroke-current green-theme transition duration-300 hover:text-green-900"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#5CA720"
+                            width="25px">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        </ul>
+    <main class="w-full md:h-96 h-48">
+        <img class="md:h-96 object-cover h-48 w-full" src="assets/img/banner.png" alt="banner">
+    </main>
 
+    <!-- PROMOCAO -->
+    <div class="promocao  py-4 border-b">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <a class="uppercase font-semibold" href="#">PROMOÇÃO</a>
+                <p class="text-sm">9 produtos</p>
+            </div>
+        </div>
     </div>
 
+    <div class="lista container pt-10">
 
+        <div class="flex flex-wrap justify-center gap-10 md:grid md:grid-cols-3">
+            <!-- CARD -->
+            <ul class="w-5/12 mb-2 h-full md:w-full md:max-w-250 md:mx-auto">
+                <li class="w-25 mx-auto h-36 md:h-52 relative"><img class="object-cover absolute w-full h-full"
+                        src="assets/img/produto (1).jpg" alt="produto"></li>
+                <li>
+                    <p class="text-sm py-2 font-semibold"> Lorem ipsum dolor sit</p>
+                </li>
+                <li>
+                    <p class="green-theme font-medium"><span class="text-black">R$</span> 50,00</p>
+                </li>
+            </ul>
+            <!-- CARD -->
+
+            <ul class="w-5/12 mb-2 h-full md:w-full md:max-w-250 md:mx-auto">
+                <li class="w-25 mx-auto h-36 md:h-52 relative">
+                    <img class="object-cover absolute w-full h-full" src="assets/img/produto (2).jpg" alt="produto">
+                </li>
+                <li>
+                    <p class="text-sm py-2 font-semibold"> Lorem ipsum dolor sit</p>
+                </li>
+                <li>
+                    <p class="green-theme font-medium"><span class="text-black">R$</span> 50,00</p>
+                </li>
+            </ul>
+            <!-- CARD -->
+
+            <ul class="w-5/12 mb-2 h-full md:w-full md:max-w-250 md:mx-auto">
+
+                <li class="w-25 mx-auto h-36 md:h-52 relative">
+                    <img class="object-cover absolute w-full h-full" src="assets/img/produto (3).jpg" alt="produto">
+                </li>
+                <li>
+                    <p class="text-sm py-2 font-semibold"> Lorem ipsum dolor sit</p>
+                </li>
+                <li>
+                    <p class="green-theme font-medium"><span class="text-black">R$</span> 50,00</p>
+                </li>
+            </ul>
+            <!-- CARD -->
+
+            <ul class="w-5/12 mb-2 h-full md:w-full md:max-w-250 md:mx-auto">
+                <li class="w-25 mx-auto h-36 md:h-52 relative">
+                    <img class="object-cover absolute w-full h-full" src="assets/img/produto (4).jpg" alt="produto">
+                </li>
+                <li>
+                    <p class="text-sm py-2 font-semibold"> Lorem ipsum dolor sit</p>
+                </li>
+                <li>
+                    <p class="green-theme font-medium"><span class="text-black">R$</span> 50,00</p>
+                </li>
+            </ul>
+            <!-- CARD -->
+
+            <ul class="w-5/12 mb-2 h-full md:w-full md:max-w-250 md:mx-auto">
+                <li class="w-25 mx-auto h-36 md:h-52 relative">
+                    <img class="object-cover absolute w-full h-full" src="assets/img/produto (5).jpg" alt="produto">
+                </li>
+                <li>
+                    <p class="text-sm py-2 font-semibold"> Lorem ipsum dolor sit</p>
+                </li>
+
+                <li>
+                    <p class="green-theme font-medium"><span class="text-black">R$</span> 50,00</p>
+                </li>
+                <!-- CARD -->
+            </ul>
+            <ul class="w-5/12 mb-2 h-full md:w-full md:max-w-250 md:mx-auto">
+                <li class="w-25 mx-auto h-36 md:h-52 relative">
+                    <img class="object-cover absolute w-full h-full" src="assets/img/produto (6).jpg" alt="produto">
+                </li>
+                <li>
+                    <p class="text-sm py-2 font-semibold"> Lorem ipsum dolor sit</p>
+                </li>
+                <li>
+                    <p class="green-theme font-medium"><span class="text-black">R$</span> 50,00</p>
+                </li>
+            </ul>
+            <!-- CARD -->
+
+            <ul class="w-5/12 mb-2 h-full md:w-full md:max-w-250 md:mx-auto">
+                <li class="w-25 mx-auto h-36 md:h-52 relative">
+                    <img class="object-cover absolute w-full h-full" src="assets/img/produto (7).jpg" alt="produto">
+                </li>
+                <li>
+                    <p class="text-sm py-2 font-semibold"> Lorem ipsum dolor sit</p>
+                </li>
+                <li>
+                    <p class="green-theme font-medium"><span class="text-black">R$</span> 50,00</p>
+                </li>
+            </ul>
+            <!-- CARD -->
+
+            <ul class="w-5/12 mb-2 h-full md:w-full md:max-w-250 md:mx-auto">
+                <li class="w-25 mx-auto h-36 md:h-52 relative">
+                    <img class="object-cover absolute w-full h-full" src="assets/img/produto (8).jpg" alt="produto">
+                </li>
+                <li>
+                    <p class="text-sm py-2 font-semibold"> Lorem ipsum dolor sit</p>
+                </li>
+                <li>
+                    <p class="green-theme font-medium"><span class="text-black">R$</span> 50,00</p>
+                </li>
+            </ul>
+            <!-- CARD -->
+
+            <ul class="w-5/12 mb-2 h-full md:w-full md:max-w-250 md:mx-auto">
+                <li class="w-25 mx-auto h-36 md:h-52 relative">
+                    <img class="object-cover absolute w-full h-full" src="assets/img/produto.jpg" alt="produto"></li>
+                <li>
+                    <p class="text-sm py-2 font-semibold"> Lorem ipsum dolor sit</p>
+                </li>
+                <li>
+                    <p class="green-theme font-medium"><span class="text-black">R$</span> 50,00</p>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+    </div>
 
 
 
